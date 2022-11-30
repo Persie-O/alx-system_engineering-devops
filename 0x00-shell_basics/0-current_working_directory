@@ -1,5 +1,0 @@
-#!/bin/bash
-echo "The absolute path of the current working directory is: $(pwd)"
-The absolute path of the current working directoryy is: /tmp/correction/9898105879879395715871883159206919518291_5/205/197700/0x00-shell_basics
-
-
