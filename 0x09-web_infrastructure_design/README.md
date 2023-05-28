@@ -2,11 +2,11 @@
 **0x09. Web infrastructure design**
 
 ## Author's Details.
-Name: *Wendy Munyasi.*
+Name: *Pascal Otieno.*
 
-Email: *wendymunyasi@gmail.com*
+Email: *persiewailer697@gmail.com*
 
-Tel:*+254707240068.*
+Tel:*+254792424222.*
 
 ## Key concepts
 * Network basics
@@ -33,4 +33,4 @@ Tel:*+254707240068.*
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com.
+To collaborate, reach me through my email address persiewailer697@gmail.com.
