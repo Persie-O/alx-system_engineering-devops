@@ -1,0 +1,1 @@
+what's happen when you type wwww.google.com
