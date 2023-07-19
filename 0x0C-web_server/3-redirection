@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
-# script that installs Nginx server and redirects /redirect_me to
-# another page
-# The redirection must be a “301 Moved Permanently”
-apt-get -y update
-apt-get -y install nginx
-service nginx start
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sed -i "/server_name _;/ a\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
-service nginx restart
+#  A Script that configures a new Ubuntu machine to Perform a 301-redirection
+
+# Upadating Packages before Installations
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Creating an index.html page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Performing a 301 Redirection
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/Persie-O permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+
+# Restarting Nginx service
+sudo service nginx restart
